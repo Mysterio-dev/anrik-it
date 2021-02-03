@@ -1,0 +1,27 @@
+.customer {
+    position: relative;
+    z-index: 1;
+    background-color: #F2F3F6;
+}
+
+.figure {
+    display: none;
+}
+
+.slider {
+    padding: 100px 0;
+}
+
+
+
+.about {
+    margin-bottom: 100px;
+
+
+
+    &__img img {
+        width: 100%;
+    }
+}
+
+

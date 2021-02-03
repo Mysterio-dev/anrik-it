@@ -1,0 +1,15 @@
+span.green {
+    color: #8ac44b;
+}
+
+span.blue {
+    color: #1f69a6;
+}
+
+.title.green::first-letter {
+    color: #8ac44b;
+}
+
+.title.blue::first-letter {
+    color: #1f69a6;
+}

@@ -1,0 +1,62 @@
+.subscribe {
+    &__area {
+        max-width: 1496px;
+        margin: 0 auto;
+        position: relative;
+        bottom: -110px;
+    }
+
+    &__wrapper {
+        background-color: #8AC44B;
+    }
+
+    &__text {
+        color: #fff;
+    }
+
+    &__text span {
+        font-size: 21px;
+    }
+
+    &__text h1 {
+        font-weight: 700;
+    }
+
+    &__form form {
+        display: flex;
+    }
+
+    &__form .form-control {
+        font-size: 19px;
+        border-radius: 0;
+        background-color: transparent;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 3px solid #fff;
+        color: #3B3C40;
+        margin-right: 20px;
+        padding-left: 0;
+    }
+
+    &__form .form-control:focus {
+        box-shadow: none;
+    }
+
+    &__form input::placeholder {
+        color: #fff;
+    }
+    
+    &__form span {
+        display: block;
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #69A042;
+    }
+
+  
+
+
+    
+}

@@ -1,0 +1,156 @@
+.swiper-container__wrap {
+    position: relative;
+    margin-top: 50px;
+}
+
+.swiper-pagination {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    opacity: 1;
+    border: 2px solid #8AC44B;
+    margin: 0 6px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #8AC44B;
+}
+
+.card-project {
+    border: 0;
+}
+
+.card-project {
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(34, 104, 161, 0.22) 30.43%, rgb(38, 102, 155) 50%, #1F69A6 100%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+}
+
+
+
+.card-project {
+    &:hover.card-project::after {
+        opacity: 1;
+        cursor: pointer;
+    }
+ }
+
+.card-project {
+    &:hover .card-text {
+        color: #fff;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.card-project {
+    &:hover .card-title a {
+        color: #fff;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+
+.card-project {
+    &:hover .data {
+        color: #fff;
+        position: relative;
+        z-index: 1
+    }
+}
+
+
+
+
+.card-project .card-body {
+    height: 150px;
+    padding: 20px;
+    background: #F2F3F6;
+}
+
+.card-project .card-title {
+	white-space: nowrap;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+}
+
+.card-project .card-title a {
+    color: #32A7DF;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.card-project .card-text {
+    font-weight: 400;
+    line-height: 29px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+}
+
+.card-project .card-img-top {
+    border-radius: 0;
+}
+
+.card-project .card-footer {
+    border: 0;
+    padding: 20px;
+    background: #F2F3F6;
+}
+
+.card-project .data {
+    color: #999999;
+}
+
+.swiper-button-next {
+    right: -90px;
+    display: flex;
+    width: 62px;
+    height: 62px;
+    border: 3px solid #8AC44B;
+    transition: all 0.3s;
+}
+
+.swiper-button-prev {
+    left: -90px;
+    display: flex;
+    width: 62px;
+    height: 62px;
+    border: 3px solid #8AC44B;
+    transition: all 0.3s;
+}
+
+.swiper-button-next::after {
+    content: '';
+    background: url('../svg/right-arrow.svg') no-repeat;
+    background-size: contain;
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    right: -5px;
+}
+
+.swiper-button-prev::after {
+    content: '';
+    background: url('../svg/left-arrow.svg') no-repeat;
+    background-size: contain;
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: relative;
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>АНРИК ИТ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/libs/hamburgers/hamburgers.css">
+  <link rel="stylesheet" href="assets/libs/leaflet/leaflet.css">
+  <link rel="stylesheet" href="style/css/style.css">
+  <link rel="apple-touch-icon" sizes="152x152" href="style/images/ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="style/images/ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="style/images/ico/favicon-16x16.png">
+  <link rel="manifest" href="style/images/ico/site.webmanifest">
+  <link rel="mask-icon" href="style/images/ico/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <section class="sidebar sidebar--left" id="sidebar-name-left" data-sidebar-target>
+    <div class="sidebar__overlay" data-sidebar-close tabindex="-1"></div>
+    <div class="sidebar__wrapper">
+      <button class="sidebar__close" data-sidebar-close aria-label="Close sidebar"></button>
+
+      <div class="sidebar__content">
+        <ul>
+          <li><a href="">О нас</a></li>
+          <li><a href="">Заказчикам</a></li>
+          <li><a href="">Исполнителям</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+  <header class="header">
+    <div class="container-xxl">
+      <nav class="navbar navbar-expand-lg">
+
+        <div class="hamburger" data-sidebar-trigger aria-controls="sidebar-name-left" aria-expanded="false">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+        <a class="navbar-brand" href="#">
+          <img src="style/svg/logo.svg" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Заказчикам</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Исполнителям</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn__blue exit">
+          <span>Выйти</span>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="22"
+            viewBox="0 0 500 500" fill="currentColor" xml:space="preserve">
+            <path d="M255.15,468.625H63.787c-11.737,0-21.262-9.526-21.262-21.262V64.638c0-11.737,9.526-21.262,21.262-21.262H255.15
+			c11.758,0,21.262-9.504,21.262-21.262S266.908,0.85,255.15,0.85H63.787C28.619,0.85,0,29.47,0,64.638v382.724
+			c0,35.168,28.619,63.787,63.787,63.787H255.15c11.758,0,21.262-9.504,21.262-21.262
+			C276.412,478.129,266.908,468.625,255.15,468.625z" />
+            <path d="M505.664,240.861L376.388,113.286c-8.335-8.25-21.815-8.143-30.065,0.213s-8.165,21.815,0.213,30.065l92.385,91.173
+			H191.362c-11.758,0-21.262,9.504-21.262,21.262c0,11.758,9.504,21.263,21.262,21.263h247.559l-92.385,91.173
+			c-8.377,8.25-8.441,21.709-0.213,30.065c4.167,4.21,9.653,6.336,15.139,6.336c5.401,0,10.801-2.041,14.926-6.124l129.276-127.575
+			c4.04-3.997,6.336-9.441,6.336-15.139C512,250.302,509.725,244.88,505.664,240.861z" />
+          </svg>
+
+
+        </button>
+
+      </nav>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Главная</a></li>
+          <li class="breadcrumb-item"><a href="#">Личный кабинет</a></li>
+          <li class="breadcrumb-item"><a href="#">Выполненные проекты</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Добавить работу</li>
+        </ol>
+      </nav>
+      <div class="page-title">
+        <h1>Добавление работы в портфолио</h1>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-xxl">
+    <div class="profile__add-wrap">
+    <form action="">
+    <div class="row">
+        <div class="col-sm-6 mb-5">
+          <label for="exampleFormControlInput1" class="form-label">Название</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+        </div>
+        <div class="col-sm-6 mb-5">
+          <label for="exampleFormControlInput1" class="form-label">Ссылка на проект</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+        </div>
+        <div class="col-md-12 mb-4">
+          <label for="exampleFormControlTextarea1" class="form-label">Описание</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Опишите ваш проект"></textarea>
+        </div>
+       
+        <div class="profile__img-upload d-block mb-5">
+          <h6 class="mb-3">Логотип</h6>
+          <div class="input-group">
+            <input type="file" class="form-control" id="inputGroupFile01">
+            <label for="inputGroupFile01">Выбрать файл</label>
+          </div>
+        </div>
+        <div class="profile__block-check">
+          <h6 class="mb-3">Задача выполнена</h6>
+            <div class="col">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="associations">
+                <label class="form-check-label" for="associations">
+                  В ассоциации
+                </label>
+              </div>
+            </div>
+        </div>
+
+        <div class="col mt-4">
+          <div class="d-flex">
+            <button class="btn btn__save-green">Добавить работу</button>
+          </div>
+        </div>
+      </div>
+
+    </form>
+  </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  <footer class="footer mt-auto">
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3 footer__info">
+          <div class="footer__logo">
+            <svg width="190" height="66" viewBox="0 0 190 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0L65.0626 23.1131L6.36112 65.5721" fill="white" />
+              <path
+                d="M33.2729 61.7126C44.3495 61.7126 53.3289 52.111 53.3289 40.2669C53.3289 28.4228 44.3495 18.8213 33.2729 18.8213C22.1962 18.8213 13.2168 28.4228 13.2168 40.2669C13.2168 52.111 22.1962 61.7126 33.2729 61.7126Z"
+                fill="#7FCAFF" />
+              <path
+                d="M86.4619 41.795C86.3649 41.1382 86.2257 40.4884 86.0451 39.8496L85.5973 38.3056H80.6721L80.2089 39.8496C80.007 40.4829 79.8674 41.1345 79.792 41.795H75.8086C76.1218 41.0746 76.3949 40.3375 76.6269 39.5871L80.3015 28.7794C80.542 28.1545 80.7229 27.5083 80.8419 26.8494H85.2885C85.4439 27.5043 85.6398 28.1488 85.8752 28.7794L89.5653 39.5871C89.8895 40.5444 90.1674 41.2855 90.3836 41.795H86.4619ZM83.1424 29.891L81.5985 35.2949H84.8099L83.1424 29.891Z"
+                fill="white" />
+              <path
+                d="M105.53 26.8185C105.429 27.7 105.388 28.5872 105.406 29.4741V39.1239C105.395 40.0159 105.436 40.9078 105.53 41.795H101.902C102.015 40.9094 102.062 40.0165 102.041 39.1239V35.6346H96.2661V39.1239C96.2564 40.0163 96.3028 40.9084 96.4051 41.795H92.7459C92.8611 40.9095 92.9075 40.0165 92.8848 39.1239V29.4741C92.9057 28.5867 92.8592 27.699 92.7459 26.8185H96.4051C96.305 27.7001 96.2586 28.5869 96.2661 29.4741V32.4231H102.01V29.4741C102.043 28.5875 102.007 27.6996 101.902 26.8185H105.53Z"
+                fill="white" />
+              <path
+                d="M109.498 41.795C109.6 40.9085 109.641 40.016 109.621 39.1239V29.3352C109.632 28.4582 109.586 27.5814 109.482 26.7105C110.285 26.7105 110.903 26.7105 111.984 26.7105H115.797C119.163 26.7105 121.031 28.4088 121.031 31.5431C121.107 32.2483 121.024 32.9616 120.787 33.6303C120.551 34.2991 120.168 34.9062 119.665 35.407C119.163 35.9079 118.555 36.2896 117.885 36.524C117.216 36.7585 116.502 36.8397 115.797 36.7616H113.018V39.0622C113.019 39.9748 113.065 40.8869 113.157 41.795H109.498ZM115.566 33.7046C115.824 33.7271 116.084 33.6917 116.327 33.601C116.57 33.5102 116.79 33.3665 116.97 33.1801C117.151 32.9938 117.287 32.7695 117.37 32.5237C117.453 32.2779 117.48 32.0168 117.449 31.7592C117.482 31.5041 117.456 31.2448 117.373 31.0013C117.29 30.7579 117.152 30.5367 116.97 30.3548C116.788 30.1729 116.567 30.0351 116.324 29.952C116.08 29.869 115.821 29.8428 115.566 29.8756H113.018V33.7046H115.566Z"
+                fill="white" />
+              <path
+                d="M127.516 34.4148C127.518 35.0546 127.482 35.6939 127.408 36.3293C127.698 35.7163 128.028 35.1231 128.396 34.5538L131.87 29.0573C132.356 28.362 132.755 27.6102 133.059 26.8185H136.78C136.673 27.7047 136.626 28.5971 136.641 29.4896V38.9541C136.615 39.9032 136.662 40.8529 136.78 41.795H133.151C133.263 40.8627 133.31 39.9237 133.29 38.985V34.3531C133.29 33.7509 133.29 33.2569 133.383 32.315C133.088 32.9455 132.758 33.5589 132.395 34.1524L129.029 39.5099C128.558 40.2514 128.13 41.0196 127.747 41.8104H124.027C124.114 40.9177 124.156 40.0209 124.15 39.1239V29.5513C124.164 28.6387 124.123 27.7261 124.027 26.8185H127.655C127.544 27.7251 127.498 28.6383 127.516 29.5513V34.4148Z"
+                fill="white" />
+              <path
+                d="M149.301 41.795C148.988 41.057 148.627 40.3401 148.22 39.6489L146.676 36.8543C146.53 36.432 146.247 36.0706 145.873 35.8273C145.498 35.584 145.053 35.4727 144.608 35.511H144.175V39.1239C144.175 40.0194 144.175 40.8223 144.314 41.795H140.64C140.743 40.9085 140.789 40.0163 140.779 39.1239V29.4741C140.792 28.5868 140.745 27.6996 140.64 26.8185H144.314C144.211 27.6998 144.164 28.5869 144.175 29.4741V32.4231H144.592C144.917 32.3858 145.226 32.2633 145.488 32.068C145.725 31.8732 145.937 31.6503 146.121 31.4041L147.973 28.9492C149.286 27.22 150.289 26.5561 151.633 26.5561C152.214 26.5402 152.79 26.6619 153.316 26.9112L152.466 29.9991C152.306 29.8385 152.091 29.7447 151.864 29.7366C151.525 29.7366 151.231 29.9373 150.83 30.4623L149.286 32.5158C148.811 33.1634 148.139 33.64 147.371 33.8744C147.97 33.9805 148.533 34.2315 149.012 34.6056C149.491 34.9798 149.872 35.4656 150.12 36.0205L152.111 39.3092C152.559 40.0348 153.285 41.1156 153.779 41.8258L149.301 41.795Z"
+                fill="white" />
+              <path
+                d="M165.204 34.4149C165.204 34.9708 165.204 35.7582 165.096 36.3295C165.386 35.7164 165.716 35.1232 166.084 34.5539L169.558 29.0574C170.038 28.3584 170.437 27.6074 170.747 26.8186H174.468C174.361 27.7048 174.315 28.5972 174.329 29.4897V38.9542C174.304 39.9033 174.35 40.853 174.468 41.7951H170.84C170.944 40.8622 170.991 39.9237 170.979 38.9851V34.3532C170.979 33.751 170.979 33.257 171.071 32.3151C170.777 32.9456 170.447 33.559 170.083 34.1525L166.748 39.4946C166.277 40.2361 165.849 41.0042 165.467 41.7951H161.73C161.832 40.9033 161.879 40.0061 161.869 39.1086V29.5515C161.887 28.6384 161.841 27.7252 161.73 26.8186H165.359C165.262 27.7262 165.221 28.6389 165.235 29.5515L165.204 34.4149Z"
+                fill="#7FCAFF" />
+              <path
+                d="M185.43 39.0623C185.417 39.9753 185.463 40.8882 185.569 41.7951H181.802C181.902 40.8877 181.949 39.9751 181.941 39.0623V29.9992H179.918C179.062 29.9896 178.206 30.0308 177.355 30.1227V26.6797C178.196 26.7786 179.041 26.825 179.887 26.8186H187.345C188.232 26.8307 189.119 26.7843 190 26.6797V30.1227C189.119 30.0232 188.232 29.982 187.345 29.9992H185.43V39.0623Z"
+                fill="#7FCAFF" />
+            </svg>
+          </div>
+          <span class="footer__description">Ассоциация независимых экспертов<br> и профессионалов в области<br>
+            информационных технологий</span>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 footer__block mail">
+          <h5>Напишите нам</h5>
+          <a class="footer__mail" href="mailto:info@anik.space">info@anik.space</a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 footer__block phone">
+          <h5>или позвоните</h5>
+          <a class="footer__phone" href="tel:+79375895500">+7 (937) 589-55-00</a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 footer__block social">
+          <div class="footer__social-wrap">
+            <h5>Мы в соцсетях</h5>
+            <div class="footer__social">
+              <svg width="32" height="20" viewBox="0 0 32 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M26.5831 9.89987C26.5831 9.89987 30.7992 3.68997 31.2183 1.72539C31.3582 1.02331 31.0515 0.400391 30.3247 0.400391C30.3247 0.400391 27.8952 0.400391 26.667 0.400391C25.8289 0.400391 25.5222 0.995703 25.2704 1.52904C25.2704 1.52904 23.2932 5.88112 20.887 8.55091C20.1146 9.41393 19.9172 9.73164 19.4909 9.73164C19.147 9.73164 19.1832 9.50143 19.1832 8.72227V1.89987C19.1832 0.944141 18.6813 0.400391 17.8996 0.400391H12.0361C11.5891 0.400391 11.3803 0.793099 11.3803 1.14935C11.3803 2.04831 12.8189 2.38216 12.8189 4.81862V9.84362C12.8189 10.8546 12.6925 11.2473 12.2185 11.2473C10.9623 11.2473 7.93861 6.76393 6.26335 1.82227C5.92715 0.813412 5.52932 0.400391 4.57979 0.400391H0.922071C0.391621 0.400391 0 0.897266 0 1.4306C0 2.41341 1.14482 7.02747 5.64069 13.1202C8.6571 17.2197 12.7603 19.4702 16.3346 19.4702C18.5129 19.4702 19.1822 19.1384 19.1822 18.2118V15.0671C19.1822 14.2811 19.35 13.9436 19.7965 13.9436C20.299 13.9436 21.1159 14.1551 23.189 16.2103C25.6486 18.5691 25.746 19.6004 27.0861 19.6004H31.1903C31.6094 19.6004 32 19.3551 32 18.653C32 17.7264 30.7992 16.0462 28.9561 14.0806C28.2019 13.0702 26.9732 11.9629 26.5831 11.4577C26.0252 10.8676 26.1925 10.5176 26.5831 9.89987Z" />
+              </svg>
+              <svg width="16" height="32" viewBox="0 0 16 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.0789 5.31333H16V0.225333C15.496 0.156 13.7629 0 11.7444 0C7.53271 0 4.64761 2.64933 4.64761 7.51867V12H0V17.688H4.64761V32H10.3458V17.6893H14.8054L15.5134 12.0013H10.3445V8.08267C10.3458 6.43867 10.7884 5.31333 13.0789 5.31333Z" />
+              </svg>
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.9998 20.0978C17.3676 20.0978 20.0976 17.3677 20.0976 14C20.0976 10.6323 17.3676 7.90222 13.9998 7.90222C10.6321 7.90222 7.90207 10.6323 7.90207 14C7.90207 17.3677 10.6321 20.0978 13.9998 20.0978Z" />
+                <path
+                  d="M22.5554 5.83333C22.5554 6.47767 22.0331 7 21.3887 7C20.7444 7 20.2221 6.47767 20.2221 5.83333C20.2221 5.189 20.7444 4.66667 21.3887 4.66667C22.0331 4.66667 22.5554 5.189 22.5554 5.83333Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0 8.4C0 3.76081 3.76081 0 8.4 0H19.6C24.2392 0 28 3.76081 28 8.4V19.6C28 24.2392 24.2392 28 19.6 28H8.4C3.76081 28 0 24.2392 0 19.6V8.4ZM13.9998 21.7778C18.2954 21.7778 21.7776 18.2955 21.7776 14C21.7776 9.70445 18.2954 6.22222 13.9998 6.22222C9.7043 6.22222 6.22207 9.70445 6.22207 14C6.22207 18.2955 9.7043 21.7778 13.9998 21.7778ZM21.3887 8.4C22.8063 8.4 23.9554 7.25086 23.9554 5.83333C23.9554 4.4158 22.8063 3.26667 21.3887 3.26667C19.9712 3.26667 18.8221 4.4158 18.8221 5.83333C18.8221 7.25086 19.9712 8.4 21.3887 8.4Z" />
+              </svg>
+              <svg width="32" height="26" viewBox="0 0 32 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M32 3.078C30.81 3.6 29.542 3.946 28.22 4.114C29.58 3.302 30.618 2.026 31.106 0.488C29.838 1.244 28.438 1.778 26.946 2.076C25.742 0.794 24.026 0 22.154 0C18.522 0 15.598 2.948 15.598 6.562C15.598 7.082 15.642 7.582 15.75 8.058C10.296 7.792 5.47 5.178 2.228 1.196C1.662 2.178 1.33 3.302 1.33 4.512C1.33 6.784 2.5 8.798 4.244 9.964C3.19 9.944 2.156 9.638 1.28 9.156C1.28 9.176 1.28 9.202 1.28 9.228C1.28 12.416 3.554 15.064 6.536 15.674C6.002 15.82 5.42 15.89 4.816 15.89C4.396 15.89 3.972 15.866 3.574 15.778C4.424 18.376 6.836 20.286 9.704 20.348C7.472 22.094 4.638 23.146 1.57 23.146C1.032 23.146 0.516 23.122 0 23.056C2.906 24.93 6.35 26 10.064 26C22.136 26 28.736 16 28.736 7.332C28.736 7.042 28.726 6.762 28.712 6.484C30.014 5.56 31.108 4.406 32 3.078Z" />
+              </svg>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        © 2020 АНРИК ИТ.
+        <a class="" href="">Пользовательское соглашение</a>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/libs/leaflet/leaflet.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

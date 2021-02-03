@@ -1,0 +1,66 @@
+.footer {
+    background-color: #075E9B;
+    padding: 100px 0;
+    &__description {
+        display: block;
+        font-size: 13px;
+        color: #7FCAFF;
+        line-height: 15px;
+        padding-top: 10px;
+    }
+
+    &__mail,
+    &__phone {
+        font-size: 25px;
+        font-weight: 500;
+        color: #fff;
+        text-decoration: none;
+        transition: all .15s ease;
+        &:hover {
+            color: #8AC44B;
+        } 
+    }
+
+    &__social-wrap {
+        margin-left: auto;
+        width: 100%;
+        max-width: 213px;
+    }
+
+    &__social svg  {
+        cursor: pointer;
+        margin-right: 20px;
+        color: #7FCAFF;
+        transition: color .20s ease-in-out;
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &__social svg:last-child {
+        margin-right: 0;
+    }
+
+    &__bottom {
+        font-size: 13px;
+        padding-top: 50px;
+        color:#32A7DF;
+    }
+
+    &__bottom a {
+        color:#32A7DF;
+        text-decoration: none;
+    }
+
+}
+
+.footer h5 {
+    font-size: 19px;
+    color: #7FCAFF;
+    font-weight: 500;
+
+}
+
+.home .footer {
+    padding: 180px 0 100px;
+}

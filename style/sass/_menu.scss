@@ -1,0 +1,116 @@
+.sidebar {
+    display: none;
+
+    &__overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        opacity: 0;
+        transition: opacity 0.3s;
+        will-change: opacity;
+        background-color: #000;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    &__close {
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: url('../svg/close.svg') no-repeat;
+        background-size: contain;
+        cursor: pointer;
+        width: 28px;
+        height: 28px;
+        flex-shrink: 0;
+        margin-left: auto;
+        position: relative;
+        top: 12px;
+        right: 12px;
+        &:hover {
+            opacity: 0.4;
+        }
+    }
+
+    &__wrapper {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        max-width: 300px;
+        z-index: 9999;
+        overflow: auto;
+        transition: transform 0.3s;
+        will-change: transform;
+        background-color: #1F69A6;
+        display: flex;
+        flex-direction: column;
+        -webkit-transform: translate3d(103%, 0, 0);
+        transform: translate3d(103%, 0, 0);
+        -webkit-overflow-scrolling: touch;
+        box-shadow: 0 2px 6px #777;
+    }
+
+    &__content {
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 100%;
+        flex-grow: 1;
+        margin-top: 15px;
+    }
+
+    &__content ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    &__content li {
+        border-bottom: 1px solid #174F7D;
+    }
+   
+
+    &__content li:last-child {
+        border-bottom: none;
+    }
+
+    &__content li a {
+        padding: 20px;
+        font-weight: 500;
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        width: 100%;
+    }
+
+}
+
+
+.sidebar--left .sidebar__wrapper {
+    left: 0;
+    right: auto;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+.sidebar.is-active {
+    display: block;
+}
+
+.sidebar.is-visible .sidebar__wrapper {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.sidebar.is-visible .sidebar__overlay {
+    opacity: 0.5;
+}
+

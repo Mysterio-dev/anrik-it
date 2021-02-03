@@ -1,0 +1,49 @@
+
+.list {
+    list-style: none;
+    font-weight: 500;
+    line-height: 28px;
+    padding-left: 0;
+    margin-bottom: 0;
+    &__item {
+        color: #3B3C40;
+        position: relative;
+        padding-left: 40px;
+        padding-bottom: 10px;
+    }
+
+ 
+
+    &__item.check-green {
+        &::before {
+            content: '';
+            background: url(../svg/check-green.svg) no-repeat;
+            background-size: contain;
+            display: inline-block;
+            margin-right: 15px;
+            height: 17px;
+            width: 28px;
+            position: absolute;
+            left: 0;
+            top: 7px;
+    }
+    }
+    &__item.check-blue {
+        &::before {
+            content: '';
+            background: url(../svg/check-blue.svg) no-repeat;
+            background-size: contain;
+            display: inline-block;
+            margin-right: 15px;
+            height: 17px;
+            width: 28px;
+            position: absolute;
+            left: 0;
+            top: 7px;
+    }
+    }
+}
+
+.list li:last-child {
+    padding-bottom: 0;
+}
